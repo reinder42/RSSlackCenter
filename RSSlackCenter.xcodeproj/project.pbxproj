@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1343AED1B7B758300247F58 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1343AEC1B7B758300247F58 /* Constant.swift */; };
+		D1343AF41B7B76A300247F58 /* RSMessageCenterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1343AF31B7B76A300247F58 /* RSMessageCenterAPI.swift */; };
+		D1343AF61B7B76B100247F58 /* RSSocketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1343AF51B7B76B100247F58 /* RSSocketAPI.swift */; };
+		D16C6B301B794AE20078B60C /* RSSlackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16C6B2F1B794AE20078B60C /* RSSlackAPI.swift */; };
+		D1F4ECD31B791B7600581BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4ECD21B791B7600581BF4 /* AppDelegate.swift */; };
+		D1F4ECDA1B791B7600581BF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F4ECD91B791B7600581BF4 /* Images.xcassets */; };
+		D1F4ECDD1B791B7600581BF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1F4ECDB1B791B7600581BF4 /* LaunchScreen.xib */; };
+		D1F4ECE91B791B7600581BF4 /* RSSlackCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4ECE81B791B7600581BF4 /* RSSlackCenterTests.swift */; };
+		D1F4ECF41B791BD800581BF4 /* RSMessageCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4ECF21B791BD800581BF4 /* RSMessageCenterViewController.swift */; };
+		D1F4ECF71B791C1C00581BF4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D1F4ECF61B791C1C00581BF4 /* Podfile */; };
+		FC013F722EBD6103E1A095B0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AA8DFF72FC23C4CA6F6511 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1F4ECE31B791B7600581BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1F4ECC51B791B7600581BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1F4ECCC1B791B7600581BF4;
+			remoteInfo = RSSlackCenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10AA8DFF72FC23C4CA6F6511 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14832126A39BB6658ECB2375 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF0018E03A6985BB12310BBB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D1343AEC1B7B758300247F58 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D1343AF31B7B76A300247F58 /* RSMessageCenterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSMessageCenterAPI.swift; sourceTree = "<group>"; };
+		D1343AF51B7B76B100247F58 /* RSSocketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSocketAPI.swift; sourceTree = "<group>"; };
+		D16C6B2F1B794AE20078B60C /* RSSlackAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSlackAPI.swift; sourceTree = "<group>"; };
+		D1B310441B7BE2E500A465A5 /* RSSlackCenter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSlackCenter-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		D1F4ECCD1B791B7600581BF4 /* RSSlackCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSlackCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F4ECD11B791B7600581BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F4ECD21B791B7600581BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1F4ECD91B791B7600581BF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D1F4ECDC1B791B7600581BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D1F4ECE21B791B7600581BF4 /* RSSlackCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSlackCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F4ECE71B791B7600581BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1F4ECE81B791B7600581BF4 /* RSSlackCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSlackCenterTests.swift; sourceTree = "<group>"; };
+		D1F4ECF21B791BD800581BF4 /* RSMessageCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSMessageCenterViewController.swift; sourceTree = "<group>"; };
+		D1F4ECF61B791C1C00581BF4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1F4ECCA1B791B7600581BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC013F722EBD6103E1A095B0 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F4ECDF1B791B7600581BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6ADC2BD7897AFDEC61125C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14832126A39BB6658ECB2375 /* Pods.debug.xcconfig */,
+				AF0018E03A6985BB12310BBB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C71C5B61D745BC62909FDD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10AA8DFF72FC23C4CA6F6511 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1343AF71B7B76B800247F58 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				D1343AF31B7B76A300247F58 /* RSMessageCenterAPI.swift */,
+				D16C6B2F1B794AE20078B60C /* RSSlackAPI.swift */,
+				D1343AF51B7B76B100247F58 /* RSSocketAPI.swift */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		D1F4ECC41B791B7600581BF4 = {
+			isa = PBXGroup;
+			children = (
+				D1F4ECF61B791C1C00581BF4 /* Podfile */,
+				D1F4ECCF1B791B7600581BF4 /* RSSlackCenter */,
+				D1F4ECE51B791B7600581BF4 /* RSSlackCenterTests */,
+				D1F4ECCE1B791B7600581BF4 /* Products */,
+				6ADC2BD7897AFDEC61125C80 /* Pods */,
+				6C71C5B61D745BC62909FDD9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1F4ECCE1B791B7600581BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4ECCD1B791B7600581BF4 /* RSSlackCenter.app */,
+				D1F4ECE21B791B7600581BF4 /* RSSlackCenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1F4ECCF1B791B7600581BF4 /* RSSlackCenter */ = {
+			isa = PBXGroup;
+			children = (
+				D1343AEC1B7B758300247F58 /* Constant.swift */,
+				D1343AF71B7B76B800247F58 /* APIs */,
+				D1F4ECD21B791B7600581BF4 /* AppDelegate.swift */,
+				D1F4ECF21B791BD800581BF4 /* RSMessageCenterViewController.swift */,
+				D1F4ECD91B791B7600581BF4 /* Images.xcassets */,
+				D1F4ECDB1B791B7600581BF4 /* LaunchScreen.xib */,
+				D1F4ECD01B791B7600581BF4 /* Supporting Files */,
+			);
+			path = RSSlackCenter;
+			sourceTree = "<group>";
+		};
+		D1F4ECD01B791B7600581BF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1B310441B7BE2E500A465A5 /* RSSlackCenter-Bridging-Header.h */,
+				D1F4ECD11B791B7600581BF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1F4ECE51B791B7600581BF4 /* RSSlackCenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4ECE81B791B7600581BF4 /* RSSlackCenterTests.swift */,
+				D1F4ECE61B791B7600581BF4 /* Supporting Files */,
+			);
+			path = RSSlackCenterTests;
+			sourceTree = "<group>";
+		};
+		D1F4ECE61B791B7600581BF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4ECE71B791B7600581BF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1F4ECCC1B791B7600581BF4 /* RSSlackCenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F4ECEC1B791B7600581BF4 /* Build configuration list for PBXNativeTarget "RSSlackCenter" */;
+			buildPhases = (
+				D2725A96F52EF640DE5102AB /* Check Pods Manifest.lock */,
+				D1F4ECC91B791B7600581BF4 /* Sources */,
+				D1F4ECCA1B791B7600581BF4 /* Frameworks */,
+				D1F4ECCB1B791B7600581BF4 /* Resources */,
+				FC7CD480BAD1F8EB1D31AA20 /* Embed Pods Frameworks */,
+				71A04544A393E0EAB9F1DBF2 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSlackCenter;
+			productName = RSSlackCenter;
+			productReference = D1F4ECCD1B791B7600581BF4 /* RSSlackCenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1F4ECE11B791B7600581BF4 /* RSSlackCenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F4ECEF1B791B7600581BF4 /* Build configuration list for PBXNativeTarget "RSSlackCenterTests" */;
+			buildPhases = (
+				D1F4ECDE1B791B7600581BF4 /* Sources */,
+				D1F4ECDF1B791B7600581BF4 /* Frameworks */,
+				D1F4ECE01B791B7600581BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1F4ECE41B791B7600581BF4 /* PBXTargetDependency */,
+			);
+			name = RSSlackCenterTests;
+			productName = RSSlackCenterTests;
+			productReference = D1F4ECE21B791B7600581BF4 /* RSSlackCenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1F4ECC51B791B7600581BF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = LearnAppMaking;
+				TargetAttributes = {
+					D1F4ECCC1B791B7600581BF4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D1F4ECE11B791B7600581BF4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D1F4ECCC1B791B7600581BF4;
+					};
+				};
+			};
+			buildConfigurationList = D1F4ECC81B791B7600581BF4 /* Build configuration list for PBXProject "RSSlackCenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1F4ECC41B791B7600581BF4;
+			productRefGroup = D1F4ECCE1B791B7600581BF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1F4ECCC1B791B7600581BF4 /* RSSlackCenter */,
+				D1F4ECE11B791B7600581BF4 /* RSSlackCenterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1F4ECCB1B791B7600581BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F4ECDD1B791B7600581BF4 /* LaunchScreen.xib in Resources */,
+				D1F4ECF71B791C1C00581BF4 /* Podfile in Resources */,
+				D1F4ECDA1B791B7600581BF4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F4ECE01B791B7600581BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71A04544A393E0EAB9F1DBF2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2725A96F52EF640DE5102AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC7CD480BAD1F8EB1D31AA20 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1F4ECC91B791B7600581BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1343AF61B7B76B100247F58 /* RSSocketAPI.swift in Sources */,
+				D1F4ECF41B791BD800581BF4 /* RSMessageCenterViewController.swift in Sources */,
+				D1F4ECD31B791B7600581BF4 /* AppDelegate.swift in Sources */,
+				D16C6B301B794AE20078B60C /* RSSlackAPI.swift in Sources */,
+				D1343AED1B7B758300247F58 /* Constant.swift in Sources */,
+				D1343AF41B7B76A300247F58 /* RSMessageCenterAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F4ECDE1B791B7600581BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F4ECE91B791B7600581BF4 /* RSSlackCenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1F4ECE41B791B7600581BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1F4ECCC1B791B7600581BF4 /* RSSlackCenter */;
+			targetProxy = D1F4ECE31B791B7600581BF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1F4ECDB1B791B7600581BF4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1F4ECDC1B791B7600581BF4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1F4ECEA1B791B7600581BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1F4ECEB1B791B7600581BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1F4ECED1B791B7600581BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14832126A39BB6658ECB2375 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RSSlackCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSlackCenter-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		D1F4ECEE1B791B7600581BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0018E03A6985BB12310BBB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RSSlackCenter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSlackCenter-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D1F4ECF01B791B7600581BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RSSlackCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSlackCenter.app/RSSlackCenter";
+			};
+			name = Debug;
+		};
+		D1F4ECF11B791B7600581BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RSSlackCenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSlackCenter.app/RSSlackCenter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1F4ECC81B791B7600581BF4 /* Build configuration list for PBXProject "RSSlackCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F4ECEA1B791B7600581BF4 /* Debug */,
+				D1F4ECEB1B791B7600581BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F4ECEC1B791B7600581BF4 /* Build configuration list for PBXNativeTarget "RSSlackCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F4ECED1B791B7600581BF4 /* Debug */,
+				D1F4ECEE1B791B7600581BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F4ECEF1B791B7600581BF4 /* Build configuration list for PBXNativeTarget "RSSlackCenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F4ECF01B791B7600581BF4 /* Debug */,
+				D1F4ECF11B791B7600581BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1F4ECC51B791B7600581BF4 /* Project object */;
+}
