@@ -126,7 +126,7 @@ class RSMessageCenterViewController: JSQMessagesViewController
             let color = user[Slack.param.color] as? String
         {
             // This is the Slack user color
-            return factory.outgoingMessagesBubbleImageWithColor(RSMessageCenterAPI.sharedInstance.colorWithHexString(color));
+            return factory.incomingMessagesBubbleImageWithColor(RSMessageCenterAPI.sharedInstance.colorWithHexString(color));
         }
         
         return factory.outgoingMessagesBubbleImageWithColor(UIColor.lightGrayColor());
